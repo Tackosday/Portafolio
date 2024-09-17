@@ -1,7 +1,7 @@
 :root {
-    --Backdrop: #160A24;
-    --Primary: #ED3EFC;
-    --Secundary: #2CD1F5;
+    --Backdrop: #dfc39f;
+    --Primary: #4d3202;
+    --Secundary: #000000;
 }
 
 html,
@@ -31,7 +31,7 @@ body {
 
 .backgroundText {
     justify-self: center;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--Primary);
     color: var(--Backdrop);
     font-size: 340px;
@@ -119,7 +119,7 @@ body {
     width: 200px;
     height: 30px;
     border-radius: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
     border: solid;
     border-width: 2px;
     border-color: var(--Primary);
@@ -151,7 +151,7 @@ body {
     
 }
 
-@media (max-width:800px) {
+@media (max-width:665px) {
     .containerPrincipal{
         align-items: center;
     }
