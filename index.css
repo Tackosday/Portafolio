@@ -1,5 +1,5 @@
 :root {
-    --Backdrop: #dfc39f;
+    --Backdrop: #f2cfa0;
     --Primary: #4d3202;
     --Secundary: #000000;
 }
@@ -83,7 +83,15 @@ body {
     border-radius: 10px;
     border-width: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 3px 3px rgba(67, 28, 1, 0.286);
 
+}
+
+.bottom:hover{
+    color:var(--Primary);
+    background-color: var(--Backdrop);
+    border:solid var(--Primary);
+    box-shadow: none;
 }
 
 .containerEmail {
@@ -138,17 +146,23 @@ body {
 }
 
 .proyects{
-    background-color: var(--Backdrop);
+    background-color: var(--Primary);
     height: 40px;
     width: 100px;
-    border: solid;
     border-radius: 10px;
-    border-color: var(--Primary);
-    color:var(--Primary);
+    color:var(--Backdrop);
     margin-top: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
-    
+    box-shadow: 3px 3px rgba(67, 28, 1, 0.286);
+
+}
+
+.proyects:hover{
+    color:var(--Primary);
+    background-color: var(--Backdrop);
+    border:solid var(--Primary);
+    box-shadow: none;
 }
 
 @media (max-width:665px) {
