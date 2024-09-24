@@ -49,21 +49,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //animation copy bottom 
     let elementRaw = document.querySelector(".imgCopy")
+    let AlternatorImg = false;
+    let urlCheckOut ="https://github.com/Tackosday/Portafolio/blob/Testing/Resources/check%23f2cfa0.png?raw=true";
+    let urlCopyOut ="https://github.com/Tackosday/Portafolio/blob/Testing/Resources/Copy%23f2cfa0.png?raw=true";
+    let urlCheckOver ="https://github.com/Tackosday/Portafolio/blob/Testing/Resources/check%234d3202.png?raw=true";
+    let urlCopyOver ="https://github.com/Tackosday/Portafolio/blob/Testing/Resources/copy%234d3202.png?raw=true";
+    let url
+
     elementRaw.addEventListener("mouseover",()=>{
-        let url
-        let urlCheck
-        let urlCopy ="https://github.com/Tackosday/Portafolio/blob/Testing/Resources/copy%234d3202.png?raw=true";
-        elementRaw.src = urlCopy;
+        if(AlternatorImg == false){
+            elementRaw.src = urlCopyOver;
+        }else if(AlternatorImg == true){
+            elementRaw.src = urlCheckOver;
+        }
         
     })
     elementRaw.addEventListener("mouseout",()=>{
-        let url
-        let urlCheck
-        let urlCopy ="https://github.com/Tackosday/Portafolio/blob/Testing/Resources/Copy%23f2cfa0.png?raw=true";
-        elementRaw.src = urlCopy;
+        if(AlternatorImg == false){
+            elementRaw.src = urlCopyOut;
+        }else if(AlternatorImg == true){
+            elementRaw.src = urlCheckOut;
+        }
         
     })
     elementRaw.addEventListener("click",()=>{
-        console.log("click")
+        elementRaw.src = "https://github.com/Tackosday/Portafolio/blob/Testing/Resources/check%234d3202.png?raw=true"
+        AlternatorImg= true
+        let elementRawEmail = document.querySelector("#email").value
+        navigator.clipboard.writeText(elementRawEmail)
+        // console.log(elementRawEmail)
     })
 })
