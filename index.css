@@ -67,7 +67,7 @@ body {
     color: var(--Secundary);
     font-size: 4vw;
     padding-left: 4vw;
-    font-family:monospace
+    font-family: monospace
 }
 
 .bottom {
@@ -87,10 +87,10 @@ body {
 
 }
 
-.bottom:hover{
-    color:var(--Primary);
+.bottom:hover {
+    color: var(--Primary);
     background-color: var(--Backdrop);
-    border:solid var(--Primary);
+    border: solid var(--Primary);
     box-shadow: none;
 }
 
@@ -120,7 +120,18 @@ body {
     border-radius: 10px;
     background-color: var(--Primary);
     margin: 3px;
+    box-shadow: 3px 3px rgba(67, 28, 1, 0.286);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.emailBottom:hover {
+    background-color: var(--Backdrop);
+    box-shadow: none;
+    border: solid var(--Primary);
+    
 }
 
 .input {
@@ -136,50 +147,49 @@ body {
     margin: 3px;
 }
 
-.imgSend {
-    height: 30px;
-
-}
-
 .imgCopy {
-    height: 20px;
+    height: 30px;
 }
 
-.proyects{
+.proyects {
     background-color: var(--Primary);
     height: 40px;
     width: 100px;
     border-radius: 10px;
-    color:var(--Backdrop);
+    color: var(--Backdrop);
     margin-top: 20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
     box-shadow: 3px 3px rgba(67, 28, 1, 0.286);
 
 }
 
-.proyects:hover{
-    color:var(--Primary);
+.proyects:hover {
+    color: var(--Primary);
     background-color: var(--Backdrop);
-    border:solid var(--Primary);
+    border: solid var(--Primary);
     box-shadow: none;
 }
 
 @media (max-width:665px) {
-    .containerPrincipal{
+    .containerPrincipal {
         align-items: center;
     }
-    .bottom{
+
+    .bottom {
         margin: 0px;
-        margin-top:10px ;
+        margin-top: 10px;
     }
-    .title{
+
+    .title {
         font-size: 8vw;
     }
-    .subtitle{
+
+    .subtitle {
         font-size: 6vw;
     }
-    .proyects{
+
+    .proyects {
         margin-left: 15vw;
     }
 }

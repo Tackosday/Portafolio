@@ -47,4 +47,23 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(alternator, timeWait+(100*Words[interation].length))
 
 
+    //animation copy bottom 
+    let elementRaw = document.querySelector(".imgCopy")
+    elementRaw.addEventListener("mouseover",()=>{
+        let url
+        let urlCheck
+        let urlCopy ="https://github.com/Tackosday/Portafolio/blob/Testing/Resources/copy%234d3202.png?raw=true";
+        elementRaw.src = urlCopy;
+        
+    })
+    elementRaw.addEventListener("mouseout",()=>{
+        let url
+        let urlCheck
+        let urlCopy ="https://github.com/Tackosday/Portafolio/blob/Testing/Resources/Copy%23f2cfa0.png?raw=true";
+        elementRaw.src = urlCopy;
+        
+    })
+    elementRaw.addEventListener("click",()=>{
+        console.log("click")
+    })
 })
