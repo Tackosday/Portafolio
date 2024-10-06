@@ -1,0 +1,262 @@
+:root {
+    --Backdrop: #f2cfa0;
+    --Primary: #4d3202;
+    --Secundary: #000000;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: var(--Backdrop);
+}
+
+.background {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.natvar{
+    height: 9vh;
+    width: 100%;
+    background-image:linear-gradient(330deg,var(--Secundary) 20%,var(--Primary) 60%,var(--Backdrop) 100%);
+    border-bottom:solid var(--Primary);
+    z-index: 3;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.bottomNat{
+border: solid var(--Backdrop);
+margin:5px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--Backdrop);
+font-size: 20px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin: 10px;
+height: 50%;
+padding-left: 5px;
+padding-right: 5px;
+border-radius: 10px;
+}
+
+.bottomNat:hover{
+    border:rgba(0,0,0);
+    background-color: var(--Backdrop);
+    color: rgba(0,0,0);
+}
+
+.messageContainer{
+    height: 9vh;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.message{
+    margin-left: 2vw;
+    color: var(--Secundary);
+    font-size: 2vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contain {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+}
+
+.TitleName {
+    text-align: center;
+    color:var(--Backdrop);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 6vw;
+    margin-bottom: 5px;
+}
+
+.splitter{
+    border: none;
+    background-color:var(--Backdrop);
+    height: 1.5px;
+
+}
+
+.subTitleName {
+    text-align: center;
+    color:var(--Backdrop);
+    font-family: sans-serif;
+    font-size: 2vw;
+    margin-top: 5px;
+}
+
+.presentation {
+    background-image: url(../Resources/Bogota.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+}
+
+.filter {
+    background-image: linear-gradient(0deg, black, rgba(0, 0, 0, 0));
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.Information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.backgroundInfo {
+    background-image: linear-gradient(180deg, black , var(--Backdrop));
+    height: 101%;
+    width: 101%;
+    background-size: cover;
+    border: none;
+    background-position: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.top{ 
+    display: flex;
+    justify-content: center;
+    margin: 6vw;
+    margin-bottom: 0px;
+    height: 50px;
+}
+
+.containerImg{
+    border-radius: 1000px;
+    width:120px ;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    overflow: hidden;
+    border: double var(--Primary);
+    z-index: 1;
+}
+
+.image{
+    width: 100%;
+}
+
+.containParts{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.partFather{
+    height: 100%;
+    width: 80vw;
+    display: flex;
+}
+
+.part{
+background-color: #000000;
+border: solid var(--Primary);
+
+}
+
+.rigth,.left{
+    height: 100%;
+    width: 28%;
+    border: solid var(--Primary);
+    background-color: #000000;
+    margin-left:5px;
+    margin-right: 5px;
+
+}
+
+.centerPart{
+    width: 40%;
+    height: 100%;
+}
+
+.up{
+    height: 48%;
+    width: 95%;
+    margin-left:6px;
+    margin-right:6px;
+    margin-bottom: 7.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.citation{
+color: white;
+margin: 0px;
+text-align: center;
+font-size: larger;
+padding-left: 40px;
+padding-right: 40px;
+padding-bottom:10px ;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.author{
+    color: var(--Backdrop);
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+}
+
+.aboutText{
+    color: white;
+    padding: 2vw;
+    font-size: large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.letter{
+    color: var(--Backdrop);
+    font-size: 30px;
+}
+
+.urlNat{
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.down{
+    height: 50%;
+    width: 95%;
+    margin-left:6px;
+    margin-right:6px;
+    margin-top: 5px;
+}
+
+.section{
+    height: 700px;
+    width: 100px;
+}
